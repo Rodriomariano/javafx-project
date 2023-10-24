@@ -13,7 +13,7 @@ public class RegistrarCarrosComprados {
     @FXML
     private TextField txfCpf;
     @FXML
-    private TextField txfEndreco;
+    private TextField txfEndereco;
     @FXML
     private TextField txfPlaca;
     @FXML
@@ -27,12 +27,12 @@ public class RegistrarCarrosComprados {
 
 
 
-    public void onActionCadastrar() {
+    public void onActionCadastrarCarro() {
         String nome = txfNome.getText();
         String email = txfEmail.getText();
         String telefone = txfTelefone.getText();
         String cpf = txfCpf.getText();
-        String endereco = txfEnderco.getText();
+        String endereco = txfEndereco.getText();
         String placa = txfPlaca.getText();
         String ano = txfAno.getText();
         String marca = txfMarca.getText();

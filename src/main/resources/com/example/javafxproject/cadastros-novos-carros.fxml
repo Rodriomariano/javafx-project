@@ -1,8 +1,10 @@
-?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import java.util.*?>
 
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
 fx:controller="com.example.javafxproject.CadastrarNovosCarros">
@@ -24,10 +26,10 @@ fx:controller="com.example.javafxproject.CadastrarNovosCarros">
     <TextField fx:id="txfPlaca" />
 
     <Label text="Ano" />
-    <TextField fx:id"txfAno" />
+    <TextField fx:id="txfAno" />
 
     <Label text="Fabricante" />
-    <TextField fx:id"txfFabricante" />
+    <TextField fx:id="txfFabricante" />
 
 
     <VBox alignment="CENTER" spacing="20.0">
@@ -42,20 +44,29 @@ fx:controller="com.example.javafxproject.CadastrarNovosCarros">
     <TextField fx:id="txfMarca" />
 
     <Label text="Modelo" />
-    <TextField fx:id"txfModelo" />
+    <TextField fx:id="txfModelo" />
     
     <Label text="Cor" />
-    <TextField fx:id"txfCor" />
+    <TextField fx:id="txfCor" />
 
     <VBox alignment="CENTER" spacing="20.0">
         <Label text="Insira a direção:" />
     </VBox>
 
+    <ComboBox prefWidth="150.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Teste 1" />
+                <String fx:value="teste 2" />
+            </FXCollections>
+        </items>
+    </ComboBox>
+
     <CheckBox text="Automático" fx:id="ckbAutomatico" />
     <CheckBox text="Manual" fx:id="ckbManual" />
 
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
-        <Button text="Concluir" onAction="#onActionCadastrar" />
+        <Button text="Concluir" onAction="#onActionCadastrarcarronovo" />
     </VBox>
 
 </VBox>

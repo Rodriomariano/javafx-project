@@ -31,5 +31,5 @@ fx:controller="com.example.javafxproject.RegistrarCarrosComprados">
     <TextField fx:id"txfEndereco" />
 
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
-        <Button text="Seguir para o cadastro" onAction="#onActionCadastrar" />
+        <Button text="Seguir para o cadastro" onAction="#onActionCadastrarCarro" />
     </VBox>
